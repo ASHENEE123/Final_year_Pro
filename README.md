@@ -1,1 +1,1 @@
-# Final_year_Pro
+This Project Is about  Brain Stroke Predication Using CNN.Here I Have developed My oWn CNN Model WHich Predict The Brain Stroke And Classify As Normal ,Hammriage,Ischemic Which Help in further process.This Mmodel Has accuracy Of 97%.
