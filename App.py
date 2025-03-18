@@ -1,14 +1,24 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras.preprocessing import image
 from io import BytesIO
 from PIL import Image
 
 # Load the trained model
 model = tf.keras.models.load_model("final_model.h5")  # Ensure this file exists
 
+# Initialize FastAPI app
 app = FastAPI()
+
+# Enable CORS for React frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://brainstrokedetection.onrender.com"],  # Replace with your React frontend URL e.g., ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 # Function to preprocess the image
 def preprocess_image(image_data):
@@ -18,7 +28,7 @@ def preprocess_image(image_data):
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
     return img_array
 
-# API endpoint to classify an image
+# Prediction API endpoint
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
     image_data = await file.read()
