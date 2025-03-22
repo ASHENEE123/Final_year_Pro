@@ -15,18 +15,19 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://brainstrokedetection.onrender.com",
-                  "http://localhost:3000/"],  # Replace with your React frontend URL e.g., ["http://localhost:3000"]
+                  "http://localhost:3000/"],  
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],  
+    allow_headers=["*"],
 )
 
 # Function to preprocess the image
 def preprocess_image(image_data):
     img = Image.open(BytesIO(image_data))
-    img = img.resize((256, 256))  # Resize to match model input shape
-    img_array = np.array(img) / 255.0  # Normalize pixel values
-    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
+    img = img.resize((256, 256)) 
+    img_array = np.array(img) / 255.0 
+    img1=cv2.cvtColor(img_array,cv2.COLOR_BGR2GRAY)
+    img_array = np.expand_dims(img1, axis=0)  
     return img_array
 
 # Prediction API endpoint
