@@ -6,7 +6,7 @@ from io import BytesIO
 from PIL import Image
 
 # Load the trained model
-model = tf.keras.models.load_model("final_model.h5")  # Ensure this file exists
+model = tf.keras.models.load_model("latest_model.h5")  # Ensure this file exists
 
 # Initialize FastAPI app
 app = FastAPI()
