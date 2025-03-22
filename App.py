@@ -4,10 +4,9 @@ import tensorflow as tf
 import numpy as np
 from io import BytesIO
 from PIL import Image
-import cv2
 
 # Load the trained model
-model = tf.keras.models.load_model("latest_model.h5")  # Ensure this file exists
+model = tf.keras.models.load_model("latest_model.h5")  
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -16,7 +15,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://brainstrokedetection.onrender.com",
-                  "http://localhost:3000/"],  
+                   "http://localhost:3000/"],  
     allow_credentials=True,
     allow_methods=["*"],  
     allow_headers=["*"],
@@ -25,10 +24,9 @@ app.add_middleware(
 # Function to preprocess the image
 def preprocess_image(image_data):
     img = Image.open(BytesIO(image_data))
-    img = img.resize((256, 256)) 
-    img_array = np.array(img) / 255.0 
-    img1=cv2.cvtColor(img_array,cv2.COLOR_BGR2GRAY)
-    img_array = np.expand_dims(img1, axis=0)  
+    img = img.resize((256, 256)).convert("L") 
+    img_array = np.array(img) / 255.0  
+    img_array = np.expand_dims(img_array, axis=(0, -1))  
     return img_array
 
 # Prediction API endpoint
@@ -39,8 +37,8 @@ async def predict(file: UploadFile = File(...)):
 
     # Make prediction
     predictions = model.predict(img_array)
-    predicted_class = np.argmax(predictions, axis=1)[0]  # Get class with highest probability
-    confidence_score = float(np.max(predictions))  # Get the highest probability score
+    predicted_class = np.argmax(predictions, axis=1)[0]  
+    confidence_score = float(np.max(predictions))  
 
     return {
         "predicted_class": int(predicted_class),
