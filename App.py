@@ -4,6 +4,7 @@ import tensorflow as tf
 import numpy as np
 from io import BytesIO
 from PIL import Image
+import cv2
 
 # Load the trained model
 model = tf.keras.models.load_model("latest_model.h5")  # Ensure this file exists
