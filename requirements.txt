@@ -6,3 +6,4 @@ pillow
 gunicorn
 python-multipart
 starlette
+opencv-python
