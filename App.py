@@ -22,6 +22,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+     expose_headers=["X-Predicted-Class", "X-Confidence-Score"],
 )
 
 def preprocess_image(image_data):
