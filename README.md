@@ -74,12 +74,6 @@ https://brainstrokedetection.onrender.com                                   Depl
 
 ---
 
-## 🖼️ Screenshots & Icons
 
-| Prediction | Highlighted Scan | API Response |
-|:----------:|:----------------:|:------------:|
-|![image1](./Screenshot 2025-08-29 133517.png) | ![image2](./Screenshot 2025-08-29 133542.png) | ![image3](./Screenshot 2025-08-29 133634.png) |
 
----
 
-> **Empowering healthcare with AI for a better tomorrow!**
