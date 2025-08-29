@@ -78,7 +78,7 @@ https://brainstrokedetection.onrender.com                                   Depl
 
 | Prediction | Highlighted Scan | API Response |
 |:----------:|:----------------:|:------------:|
-| Screenshot 2025-08-29 133517.png | Screenshot 2025-08-29 133542.png |Screenshot 2025-08-29 133634.png |
+|![Alt text] (Screenshot 2025-08-29 133517.png) | ![Alt text] (Screenshot 2025-08-29 133542.png) | ![Alt text] (Screenshot 2025-08-29 133634.png) |
 
 ---
 
