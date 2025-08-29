@@ -57,7 +57,7 @@ python App.py
 ### 4. Make a prediction (example using `curl`)
 ```bash
 [curl -X POST "http://localhost:8000/predict/" -F "file=@your_mri_scan.png"] LOCALHOST
-(https://brainstrokedetection.onrender.com) Deployed LINK
+https://brainstrokedetection.onrender.com                                   Deployed LINK
 ```
 - Response includes classification (`Normal`, `Hemorrhagic`, `Ischemic`) and confidence score.
 - Visualization overlay returned as image.
