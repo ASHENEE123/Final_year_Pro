@@ -78,7 +78,7 @@ https://brainstrokedetection.onrender.com                                   Depl
 
 | Prediction | Highlighted Scan | API Response |
 |:----------:|:----------------:|:------------:|
-| ![🧠](https://img.icons8.com/color/96/000000/brain.png) | ![🩺](https://img.icons8.com/color/96/000000/mri.png) | ![⚡](https://img.icons8.com/color/96/000000/artificial-intelligence.png) |
+| Screenshot 2025-08-29 133517.png | Screenshot 2025-08-29 133542.png |Screenshot 2025-08-29 133634.png |
 
 ---
 
