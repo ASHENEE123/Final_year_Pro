@@ -37,6 +37,12 @@ The goal is to assist medical professionals and researchers in quick and reliabl
 
 ---
 
+#SCREEENSHOTS
+![imagealt](https://github.com/ASHENEE123/Final_year_Pro/blob/a9246c0ed7b21e11aebe0cc303946815322020c3/Screenshot%202025-08-29%20133517.png)
+![imagealt](https://github.com/ASHENEE123/Final_year_Pro/blob/a9246c0ed7b21e11aebe0cc303946815322020c3/Screenshot%202025-08-29%20133542.png)
+![imagealt](https://github.com/ASHENEE123/Final_year_Pro/blob/a9246c0ed7b21e11aebe0cc303946815322020c3/Screenshot%202025-08-29%20133634.png)
+![imagealt](https://github.com/ASHENEE123/Final_year_Pro/blob/ae81cb82f0f5db59cd77c1e38833160aefe5767a/Screenshot%202025-04-18%20182401.png)
+
 ## 🚀 Usage Instructions
 
 ### 1. Clone the repository
@@ -63,6 +69,9 @@ https://brainstrokedetection.onrender.com                                   Depl
 - Visualization overlay returned as image.
 
 ---
+
+
+
 
 ## 🧩 Insightful Highlights
 
