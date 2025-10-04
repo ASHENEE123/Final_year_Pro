@@ -1,4 +1,5 @@
 # 🧠 Brain Stroke Prediction Using CNN
+This Is deployed Version 
 
 Welcome to the **Brain Stroke Prediction** project!  
 This repository contains a powerful deep learning solution for automated brain stroke detection and classification using Convolutional Neural Networks (CNN). The model achieves an impressive **97% accuracy** and offers a web API for real-time MRI scan analysis.
